@@ -71,7 +71,7 @@ exemplo
 Tag `<ins>` <-- texto <ins>inserido</ins> ou <ins>sublinhado</ins>
 ```html
 usado para dar enfase a alguma parte do conteudo
-<!--Lembre: Pouco usado, apenas em casos especificos, formas do conteudo sao feitas nas CSS-->
+<!--Lembrete: Pouco usado, apenas em casos especificos, formas do conteudo sao feitas nas CSS-->
 ```
 ---
 Tag `<sup>` <-- texto sobrescrito: (2<sup>3</sup>*5)
