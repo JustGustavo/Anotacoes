@@ -224,7 +224,7 @@ JavaScript
 
 ```
 ---
-Mesclando listas
+###Mesclando listas
 ```html
 além de usar esses 3 tipos de listas podemos mescla-las entre si fazendo listas dentro de listas, listas nao ordenadas dentro de listas ordenadas e etc
 
@@ -268,6 +268,7 @@ exemplo de list mesclada:
         .Castlevania
 
 ```
+---
 
 
 
