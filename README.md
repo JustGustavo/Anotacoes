@@ -71,7 +71,7 @@ exemplo
 Tag `<ins>` <-- texto <ins>inserido</ins> ou <ins>sublinhado</ins>
 ```html
 usado para dar enfase a alguma parte do conteudo
-<!--Lembrete: Pouco usado, apenas em casos especificos, formas do conteudo sao feitas nas CSS-->
+<!--Lembre: Pouco usado, apenas em casos especificos, formas do conteudo sao feitas nas CSS-->
 ```
 ---
 Tag `<sup>` <-- texto sobrescrito: (2<sup>3</sup>*5)
@@ -173,7 +173,7 @@ exemplo de lista nao ordenada:
     <li>Feijao</li>
 </ul>
 
-os itens da lista irao aparecer assim no site
+<!--os itens da lista irao aparecer assim no site-->
 .Pao
 .Leite
 .Tomate
@@ -213,7 +213,7 @@ exemplo de lista de definiçao:
     <dd>Linguagem de programaçao para criaçao de interatividade de um site</dd>
 </dl>
 
-a lista no site ira ficar assim
+<!--a lista no site ira ficar assim-->
 
 HTML
     Linguagem de maracaçao para a criaçao do conteudo de um site
@@ -224,6 +224,50 @@ JavaScript
 
 ```
 ---
+Mesclando listas
+```html
+além de usar esses 3 tipos de listas podemos mescla-las entre si fazendo listas dentro de listas, listas nao ordenadas dentro de listas ordenadas e etc
+
+exemplo de list mesclada:
+
+<h1>Meus Jogos Favoritos</h1>
+<ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Mario Bros</li>
+            <ul type="circle">
+                <li>Mario bross 3</li>
+                <li>Mario Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+
+    <!--No site final nossa lista vai ficar assim-->
+
+    1NES
+        .Mario Bros
+            Mario Bros 3
+            Mario Lost Level
+        .Ninja Gaiden
+    2SNES
+        .Mario
+        .Donkey Kong
+    3PlayStation
+        .Final Fantasy
+        .Castlevania
+
+```
 
 
 
