@@ -51,7 +51,8 @@ Tag `<em>` <-- *Italico*
 Coloca uma parte desejada em italico, para gerar enfase/destaque
 exemplo:
 <p>Este é um paragrafo com uma <strong>frase em destaque</strong></p>
-<!--Nota: comando pouco usado pois toda forma é feita em css o foco do HTML é semantica/sentido , logo usamos esses tipos de tag apenas em casos especificos-->
+<!--Nota: comando pouco usado pois toda forma é feita em css o foco do HTML é semantica/sentido, 
+logo usamos esses tipos de tag apenas em casos especificos-->
 
 ```
 ---
@@ -59,7 +60,8 @@ Tag `<small>` <-- <small>texto pequeno</small>
 ```html
 faz exatamente o que é dito no seu nome, deixa as coisas pequenas
 <!--MUITO pouco usada, pode se tornar obsoleto-->
-<!--Nota: comando pouco usado pois toda forma é feita em css o foco do HTML é semantica/sentido , logo usamos esses tipos de tag apenas em casos especificos-->
+<!--Nota: comando pouco usado pois toda forma é feita em css o foco do HTML é semantica/sentido, 
+logo usamos esses tipos de tag apenas em casos especificos-->
 ```
 ---
 Tag `<del>` <-- <del>texto deletado</del>
@@ -77,14 +79,16 @@ usado para dar enfase a alguma parte do conteudo
 ---
 Tag `<sup>` <-- texto sobrescrito: (2<sup>3</sup>*5)
 ```html
-adiciona o conteudo acima, para ajudar em certas ocasioes como por exemplo fazer uma operaçao matematica, 2 elevado a 3 vezes 5 
+adiciona o conteudo acima, para ajudar em certas ocasioes como por exemplo fazer uma operaçao matematica,
+2 elevado a 3 vezes 5 
 exemplo:
 <p>Resolva o calculo 2<sup>3</sup>*5 e escreva o resultado </p>
 ```
 ---
 Tag `<sub>` <-- texto subscrito (H<sub>2</sub>O)
 ```html
-Adiciona o conteudo abaixo, para ajudar em certas ocasioes como por exemplo representar a formula da agua
+Adiciona o conteudo abaixo, para ajudar em certas ocasioes como por exemplo
+representar a formula da agua
 exemplo:
 <p>a formula da agua é H<sub>2</sub>O</p>
 ```
@@ -96,12 +100,14 @@ usada para melhor visualizaçao de uma area desejada do conteudo como por exempl
 ---
 Tag `<pre>` <-- respeito de como esta no codigo
 ```html
-tudo dentro dessa tag ira respeitar os espaços dentro do codigo posiçao do conteudo e tudo relacionado a isso
+tudo dentro dessa tag ira respeitar os espaços dentro do codigo posiçao do conteudo 
+e tudo relacionado a isso
 ```
 ---
 Tag `<q>` <-- tag de citaçao simples
 ```html
-como o nome ja diz "tag dec citaçao simples", quando vc quer destacar/dar enfase a uma certa parte do codigo
+como o nome ja diz "tag dec citaçao simples",
+quando vc quer destacar/dar enfase a uma certa parte do codigo
 ```
 ---
 Tag `<blockquote>` uma citaçao mais detalhada, como a de um autor
@@ -117,7 +123,9 @@ exemplo:
 
 <!--Dentro da tag temos nossa abreviaçao que seria o HTML e dentro de title temos o significado dela-->
 
-<!--Com nosso codigo rodando no navegador, quando deixarmos o mouse encima da abreviaçao HTML ele ira me mostra uma caixinha de texto mostrando o significado daquela abreviaçao-->
+<!--Com nosso codigo rodando no navegador, 
+quando deixarmos o mouse encima da abreviaçao HTML ele ira me mostra uma caixinha de texto 
+mostrando o significado daquela abreviaçao-->
 
 ```
 ---
@@ -155,7 +163,8 @@ os itens da lista irao aparecer assim no site
 8.Voltar para casa
 9.Jantar
 10.Dormir
-<!--Nota: Podemos mudar o tipo de numeraçao e a ordem por onde a lista começa usando o parametro type e o parametro start dentro da tag de lista-->
+<!--Nota: Podemos mudar o tipo de numeraçao e a ordem por onde a lista começa usando o parametro type 
+e o parametro start dentro da tag de lista-->
 <!-- Types da ol , 1, A, a, I, i-->
 ```
 ---
@@ -183,7 +192,8 @@ exemplo de lista nao ordenada:
 .Arroz
 .Feijao
 
-<!--Nota: Podemos mudar o tipo de numeraçao e a ordem por onde a lista começa usando o parametro type e o parametro start dentro da tag de lista-->
+<!--Nota: Podemos mudar o tipo de numeraçao e a ordem por onde a lista começa usando o parametro type
+e o parametro start dentro da tag de lista-->
 <!-- Types da ul, disc, circle, square-->
 
 ```
@@ -199,7 +209,8 @@ compoem os itens da lista
 ---
 Tag `<dl>` <-- lista de definiçao
 ```html
-Lista de definiçao <dl> acompanhada de mais duas tags a <dd> que significa termo e a <dt> que é onde vai estar a definiçao do termo
+Lista de definiçao <dl> acompanhada de mais duas tags a <dd> que significa termo 
+e a <dt> que é onde vai estar a definiçao do termo
 <!--ela é mais facil de entender na partica-->
 exemplo de lista de definiçao:
 
@@ -227,7 +238,8 @@ JavaScript
 ---
 ### Mesclando listas
 ```html
-além de usar esses 3 tipos de listas podemos mescla-las entre si fazendo listas dentro de listas, listas nao ordenadas dentro de listas ordenadas e etc
+além de usar esses 3 tipos de listas podemos mescla-las entre si 
+fazendo listas dentro de listas, listas nao ordenadas dentro de listas ordenadas e etc
 
 exemplo de list mesclada:
 
