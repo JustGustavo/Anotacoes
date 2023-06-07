@@ -106,7 +106,7 @@ e tudo relacionado a isso
 ---
 Tag `<q>` <-- tag de citaçao simples
 ```html
-como o nome ja diz "tag dec citaçao simples",
+como o nome ja diz "tag de citaçao simples",
 quando vc quer destacar/dar enfase a uma certa parte do codigo
 ```
 ---
