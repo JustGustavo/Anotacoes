@@ -135,7 +135,8 @@ literalmente inverte o texto
 ```
 Tag `<ol>>`<-- tag para criar uma lista ordenada
 ```html
-cria uma lista ordenada acompanhada da tag <li> que compoem os itens da lista seguindo a ordem que foi composta, como por exemplo uma lista de afazeres
+cria uma lista ordenada acompanhada da tag <li> que compoem os itens da lista seguindo a ordem que foi composta, 
+como por exemplo uma lista de afazeres
 
 exemplo de lista ordenada: 
 <ol> 
@@ -170,7 +171,8 @@ e o parametro start dentro da tag de lista-->
 ---
 Tag `<ul>` <-- tag para criar uma lista **NAO** ordenada
 ```html
-cria uma lista nao ordenada acompanhada da tag <li> que compoem os itens da lista sem seguir uma ordem previa como exemplo uma lista de compras
+cria uma lista nao ordenada acompanhada da tag <li> que compoem os itens da lista sem seguir uma ordem previa
+como exemplo uma lista de compras
 
 exemplo de lista nao ordenada:
 <ul> 
