@@ -41,7 +41,8 @@ Tag `<strong>` <-- **negrito**
 coloca a parte desejada em negrito dando enfase/destaque a algo desejado
 exemplo:
 <p>Este é um paragrafo com uma <strong>frase em destaque</strong></p>
-<!--Nota: comando pouco usado pois toda forma é feita em css o foco do HTML é semantica/sentido , logo usamos esses tipos de tag apenas em casos especificos-->
+<!--Nota: comando pouco usado pois toda forma é feita em css o foco do HTML é semantica/sentido, 
+logo usamos esses tipos de tag apenas em casos especificos-->
 ```
 ---
 
