@@ -307,7 +307,6 @@ exemplo de como fica o codigo com os parametros target=" e " rel=" "
     
 <!--Com a tag de ancora acompanhada desses parametros os links que esta disponivel para acesso em nosso site 
 nao irao mais sobrepor e sim abrir em uma nova aba-->
-```
 
 também temos o uso da ancora para adicionarmos links internos
 ou seja links que iram levar a outras areas do nosso site
@@ -335,7 +334,7 @@ pagina001
 <p>Está é a primeira pagina do site. Se voce quiser pode a cessar também a mina <a href="pag002.html" rel="next">segunda pagina</a></p>
 pagina002
 <p><a href="index.html"  rel="prev">Voltar para a primeira pagina</a></p>
-    
+```
 ---
 
 
