@@ -305,8 +305,8 @@ exemplo de como fica o codigo com os parametros target=" e " rel=" "
 <p>voce pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositorio publico no GitHub</a></p>
 <p>Voce também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no youtube</a></p>
     
-<!--Com a tag de ancora acompanhada desses parametros os links que esta disponivel para acesso em nosso site nao irao mais sobrepor
-e sim abrir em uma nova aba-->
+<!--Com a tag de ancora acompanhada desses parametros os links que esta disponivel para acesso em nosso site 
+nao irao mais sobrepor e sim abrir em uma nova aba-->
 ```
 
 
