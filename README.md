@@ -342,7 +342,7 @@ pagina002
 ```
 ---
 ```html
-quando temos uma pagina dentro de outra paginas temos que indicar o diretorio que ela esta
+quando temos uma pagina dentro de outra pasta temos que indicar o diretorio que ela esta
 para que possamos linkar a ancora como por exemplo uma past noticias onde tera outra arquivo
 html com a nossa pagina 003
 
@@ -380,7 +380,7 @@ e também usaremos o parametro type, para indicar o tipo do arquivo
 como será usado no exemplos usaremos o type"application.pdf"
 e o type"application.zip"
 
-exemplo de codigo na pratica:
+exemplo de codigo na pratica: 
 <h1>Links para download</h1>
     <ul>
         <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application.pdf">Baixar livro em pdf</a></li>
