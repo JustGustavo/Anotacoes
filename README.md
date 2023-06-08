@@ -361,7 +361,24 @@ exemplo:
 usamos o parametro ../ antes do nome do arquivo no caso nosso index.html
 para indicar que ele esta na pasta anterior
 
+também podemos acrescentar ancoras de links para download de arquivos
+iremos usar a tag da ancora, podemos usar também a tag de lista <ul> ou <ol>
+no caso de termos varios links e quisermos deixar mais organizado
 
+juntamente a tag de ancora iremos usar o parametro download
+pois alguns navegadores baixam direto sem esse parametro e outros nao
+mas praticamente sempre iremos precisar usar esse parametro
+    
+e também usaremos o parametro type, para indicar o tipo do arquivo
+como será usado no exemplos usaremos o type"application.pdf"
+e o type"application.zip"
+
+exemplo de codigo na pratica:
+<h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/meulivro.pdf" download="meulivro.pdf" type="application.pdf">Baixar livro em pdf</a></li>
+        <li><a href="livro/meulivro.rar" download="meulivro.rar" type="application.zip">Baixa livro em zip</a></li>
+    </ul>
 ```
 ---
 
