@@ -317,9 +317,11 @@ ex:
 
 <h2>Usando links internos</h2>
 <p>Está é a primeira pagina do site. Se voce quiser pode a cessar também a mina <a href="pag002.html">segunda pagina</a></p>
-<!--Esta é uma maneira de adicioanr links internos ao nosso site, ou seja links que levaram a outras partes do nosso proprio site-->
+<!--Esta é uma maneira de adicioanr links internos ao nosso site, 
+ou seja links que levaram a outras partes do nosso proprio site-->
 
-<!--para funcionar dessa forma como no exemplo sem ter que digitar a url do link e apenas o nome do arquivo eles tem que estar na mesma pagina-->
+<!--para funcionar dessa forma como no exemplo sem ter que digitar a url do link 
+apenas com o nome do arquivo eles tem que estar na mesma pasta-->
 e dentro da segunda pagina temos outra ancora que leva de volta a primeira
 pag002
 <h1>Esta é a segunda pagina do meu site</h1>
