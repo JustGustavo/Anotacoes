@@ -335,7 +335,33 @@ exemplo:
 pagina001
 <p>Está é a primeira pagina do site. Se voce quiser pode a cessar também a mina <a href="pag002.html" rel="next">segunda pagina</a></p>
 pagina002
-<p><a href="index.html"  rel="prev">Voltar para a primeira pagina</a></p>
+<p><a href="index.html"  rel="prev">Voltar para a primeira pagina</a></p
+    
+quando temos uma pagina dentro de outra paginas temos que indicar o diretorio que ela esta
+para que possamos linkar a ancora como por exemplo uma past noticias onde tera outra arquivo
+html com a nossa pagina 003
+
+exemplo:
+    
+<p>Voce também pode acessar nossa <a href="noticias/pag003.html" rel="next" target="_self">Pagina de noticias</a></p>
+    
+podemos ver que  o link da pagina dentro da nossa href tem noticias/pag003.html ou seja
+ele esta acessando a pasta noticias para depois acessar a nossa pagina 003
+    
+e agora se quisermos fazer um link para voltar a primeira pagina nao é tao simples como a primeira vez
+nao podemos simplesmente coloca uma ancora que leve ao index.html, pois ele nao esta na mesma pasta
+da nossa nova pagina
+
+teremos que usar uma syntax do linux dentro da tag de ancora para que possamos indicar que para 
+voltar a pagina 001, nosso index.html ele tem que voltar uma pasta
+
+exemplo:
+<p><a href="../index.html"  rel="prev" target="_self">Voltar para a primeira pagina</a></p>
+
+usamos o parametro ../ antes do nome do arquivo no caso nosso index.html
+para indicar que ele esta na pasta anterior
+
+
 ```
 ---
 
