@@ -309,5 +309,34 @@ exemplo de como fica o codigo com os parametros target=" e " rel=" "
 nao irao mais sobrepor e sim abrir em uma nova aba-->
 ```
 
+também temos o uso da ancora para adicionarmos links internos
+ou seja links que iram levar a outras areas do nosso site
+
+como por exemplo um link (ancora) que leve a pagina 2 do nosso site
+
+ex:
+
+<h2>Usando links internos</h2>
+<p>Está é a primeira pagina do site. Se voce quiser pode a cessar também a mina <a href="pag002.html">segunda pagina</a></p>
+<!--Esta é uma maneira de adicioanr links internos ao nosso site, ou seja links que levaram a outras partes do nosso proprio site-->
+
+<!--para funcionar dessa forma como no exemplo sem ter que digitar a url do link e apenas o nome do arquivo eles tem que estar na mesma pagina-->
+e dentro da segunda pagina temos outra ancora que leva de volta a primeira
+pag002
+<h1>Esta é a segunda pagina do meu site</h1>
+<p>a segunda pagina está aqui</p>
+<p><a href="index.html">Voltar para a primeira pagina</a></p>
+
+juntamente aos links internos temos os parametros rel="next" indicando aquela ancora leva ao proximo conteudo
+e também temos o rel="prev" que diz que aquela ancora leva de volta ao conteudo anterior
+
+exemplo:
+pagina001
+<p>Está é a primeira pagina do site. Se voce quiser pode a cessar também a mina <a href="pag002.html" rel="next">segunda pagina</a></p>
+pagina002
+<p><a href="index.html"  rel="prev">Voltar para a primeira pagina</a></p>
+    
+---
+
 
 
