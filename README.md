@@ -302,12 +302,13 @@ quando estamos falando de um site externo, é preferivel que usemos esses parame
 para que o nosso site nao seja sobreposto pelo link aberto pelo usuario, e sim que ele abra em uma nova janela
 
 exemplo de como fica o codigo com os parametros target=" e " rel=" " 
+<h1>Usando links externos</h1>
 <p>voce pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositorio publico no GitHub</a></p>
 <p>Voce também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no youtube</a></p>
     
 <!--Com a tag de ancora acompanhada desses parametros os links que esta disponivel para acesso em nosso site 
 nao irao mais sobrepor e sim abrir em uma nova aba-->
-
+---
 também temos o uso da ancora para adicionarmos links internos
 ou seja links que iram levar a outras areas do nosso site
 
@@ -336,7 +337,7 @@ pagina001
 <p>Está é a primeira pagina do site. Se voce quiser pode a cessar também a mina <a href="pag002.html" rel="next">segunda pagina</a></p>
 pagina002
 <p><a href="index.html"  rel="prev">Voltar para a primeira pagina</a></p
-    
+---
 quando temos uma pagina dentro de outra paginas temos que indicar o diretorio que ela esta
 para que possamos linkar a ancora como por exemplo uma past noticias onde tera outra arquivo
 html com a nossa pagina 003
@@ -360,7 +361,7 @@ exemplo:
 
 usamos o parametro ../ antes do nome do arquivo no caso nosso index.html
 para indicar que ele esta na pasta anterior
-
+---
 também podemos acrescentar ancoras de links para download de arquivos
 iremos usar a tag da ancora, podemos usar também a tag de lista <ul> ou <ol>
 no caso de termos varios links e quisermos deixar mais organizado
