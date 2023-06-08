@@ -285,8 +285,29 @@ exemplo de list mesclada:
 ```
 ---
 Tag `<a>` <-- tag de ancora
+```html
+Usada para ancordar um link seja ele interno ou externo como por exemplo
+uma frase do seu conteudo que ira leva o usuario a um site externo ou a outra parte do site
 
+exemplo de ancora <a>
 
+<p>voce pode acessar meu <a href="https://gustavoguanabara.github.io">repositorio publico no GitHub</a></p>
+<p>Voce também pode acessar o meu <a href="https://youtube.com/cursoemvideo">canal gratuito no youtube</a></p>
+    
+<!--Os links citados no exemplo estao linkados ao texto que esta dentro da tag de ancora
+logo, os textos referentes dentro do site se tornam interativos levando pra outra parte do site ou um site externo-->
+
+também temos os parametros target=" e " rel=" " que sao usados junto com a tag de ancora,
+quando estamos falando de um site externo, é preferivel que usemos esses parametros
+para que o nosso site nao seja sobreposto pelo link aberto pelo usuario, e sim que ele abra em uma nova janela
+
+exemplo de como fica o codigo com os parametros target=" e " rel=" " 
+<p>voce pode acessar meu <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">repositorio publico no GitHub</a></p>
+<p>Voce também pode acessar o meu <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">canal gratuito no youtube</a></p>
+    
+<!--Com a tag de ancora acompanhada desses parametros os links que esta disponivel para acesso em nosso site nao irao mais sobrepor
+e sim abrir em uma nova aba-->
+```
 
 
 
