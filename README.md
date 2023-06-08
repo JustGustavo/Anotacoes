@@ -308,7 +308,9 @@ exemplo de como fica o codigo com os parametros target=" e " rel=" "
     
 <!--Com a tag de ancora acompanhada desses parametros os links que esta disponivel para acesso em nosso site 
 nao irao mais sobrepor e sim abrir em uma nova aba-->
+```
 ---
+```html
 também temos o uso da ancora para adicionarmos links internos
 ou seja links que iram levar a outras areas do nosso site
 
@@ -337,7 +339,9 @@ pagina001
 <p>Está é a primeira pagina do site. Se voce quiser pode a cessar também a mina <a href="pag002.html" rel="next">segunda pagina</a></p>
 pagina002
 <p><a href="index.html"  rel="prev">Voltar para a primeira pagina</a></p
+```
 ---
+```html
 quando temos uma pagina dentro de outra paginas temos que indicar o diretorio que ela esta
 para que possamos linkar a ancora como por exemplo uma past noticias onde tera outra arquivo
 html com a nossa pagina 003
@@ -361,7 +365,9 @@ exemplo:
 
 usamos o parametro ../ antes do nome do arquivo no caso nosso index.html
 para indicar que ele esta na pasta anterior
+```
 ---
+```html
 também podemos acrescentar ancoras de links para download de arquivos
 iremos usar a tag da ancora, podemos usar também a tag de lista <ul> ou <ol>
 no caso de termos varios links e quisermos deixar mais organizado
