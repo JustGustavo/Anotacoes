@@ -567,6 +567,28 @@ o codigo final ira ficar assim
 <video src=""></video>
 ```
 ---
+```html5
+também temos que lidar com um problema que seria a 
+hospedagem do nosso site, pois quando temos midias
+hospeadadas localmente em nosso site ele se torna mais caro
+para hospedar pois a taxa de banda usada é maior
+
+para resolver isso nos podemos colocar midias em nosso site
+de forma externa como por exemplo um video linkado diretamente
+do youtube e nao diretamente do nosso site
+
+exemplo em codigo
+
+<h1>Inserindo Videos do YouTube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!--Esse codigo dentro da tag <iframe> é gerado pelo proprio youtube quando 
+selecionamos um video clicamos em compartilhar e depois clicamos em
+incorporar, fazendo esse passo a passo vamos consegui uma comand line que
+podemos colocar em nosso site para que ele tenha videos diretamente do youtube
+poupando assim o bolso do nosso cliente na hora de hospedar o seu site-->
+```
+
 
 
 
