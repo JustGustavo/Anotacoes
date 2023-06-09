@@ -567,7 +567,7 @@ o codigo final ira ficar assim
 <video src=""></video>
 ```
 ---
-```html5
+```html
 também temos que lidar com um problema que seria a 
 hospedagem do nosso site, pois quando temos midias
 hospeadadas localmente em nosso site ele se torna mais caro
