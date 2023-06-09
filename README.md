@@ -500,7 +500,71 @@ a tag, pode nao funcionar na maioria das vezes
 <controls> <- ira adicionar um botao de play com informaçao de tempo
 mudança de velocidade e ajuste de audio a nossa midia. 
 ```
----   
+
+---
+Tag `<video>` <- Adicionando videos ao nosso site
+```html
+
+Vamos aprender a adicionar alguns videos ao nosso site
+assim como aprendemso anteriormente com a tag <audio>
+temos alguns cuidados que temos que tomar na hora
+de colocar videos em nosso site ea lguns <parametros>
+que podemos usar para deixar nosso codigo mais responsivo
+
+um dos cuidados que temos que tomar é com o tamanho do 
+arquivo pois dependendo do tamanho e da hospedagem ira 
+ficar muito caro para hospedar e nosso usuario tera 
+dificuldadeds para visualizar o conteudo
+
+de fomra simples como na tag <audio> usamos a tag
+<video> desse jeito <video src=""></video> para
+adicionarmos videos de formas simples no nossos site
+
+ou podemos usar o <source:sr> para adicionarmos
+mais detalhadamente as midias em varios formatos
+para varios tipos de compatibilidade 
+
+exemplo
+
+<video poster="imagens/limoes-capa.png">
+    <source src="midias/meu-video.mp4" type="video/mp4">
+    <source src="midias/meu-video.m4v" type="video/mp4" >
+    <source src="midias/meu-video.webm" type="video/webm" >
+    <source src="midias/meu-video.ogv" type="video/ogv" >
+<video src=""></video>
+
+Como no exemplo acima temos 4 tipos arquivos, sao a mesma midia
+porem em formatos diferentes para maior compatibilidade
+com a maioria dos navegadores/usuarios
+
+juntamente a tag <video> temos alguns parametros
+como o <control> que usamos para adicionar os controles
+play , ajuste de audio e video para a midia.
+temos também o <poster> para basicamente adicionarmos
+uma thumb ao nosso conteudo
+
+<!--NOTA nao citamos acima nos parametros porem
+também usaremos o parametro width="" dentro da tag
+para diminuir o tamanho do conteudo mostrado no 
+nosso site pois ele fica muito grande normalmente-->
+
+<!--No final também colocaremos um paragrafo para
+ser mostrado na tela casa nenhum dos formatos de video
+seja compativel com o navegador do usuario-->
+
+o codigo final ira ficar assim
+
+<video poster="imagens/limoes-capa.png" width="500" controls>
+    <source src="midias/meu-video.mp4" type="video/mp4">
+    <source src="midias/meu-video.m4v" type="video/mp4" >
+    <source src="midias/meu-video.webm" type="video/webm" >
+    <source src="midias/meu-video.ogv" type="video/ogv" >
+    <p>seu navegador nao tem compatibilidade com reproduçao de video</p>
+<video src=""></video>
+```
+---
+
+
 
 
 
