@@ -469,7 +469,7 @@ que o download do proprio seja feito-->
 ```
 ---
 ```html
-vamos falar um pouco dos parametros 
+vamos falar um pouco dos `<parametros>`
 <audio preload="metadata" >,  <audio preload="none" > e <audio preload="auto" >
 sao parametros que acompanham a tag <audio> porem temos que tomar 
 cuidado no uso deles pois pode prejudicar a experiencia do usuario
