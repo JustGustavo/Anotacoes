@@ -456,6 +456,9 @@ ele tente executar o outro e assim por diante
     <source src="midia/guanacast-33.ogg" type="audio/ogg">
     <source src="midia/guanacast-33.wav" type="audio/wav">
 </audio>
+    
+<!--NOTA nao esquecer de definir o type do arquivo, 
+existem varios-->
 
 ficando assim o codigo
 
