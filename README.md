@@ -388,6 +388,40 @@ exemplo de codigo na pratica:
     </ul>
 ```
 ---
+Tag `<Picture>`
+```html
+Usamos a tag picture para criar varias sources de imagens
+criando uma dinamismo entra elas, como por exemplo
+criar imagens de tamanhos variados no caso de o usuario
+estar visualizando em dispositivos de tamanhos de tela
+distintos
+
+Como por exemplo, uma imagem de 1000px(pixels) nao sera
+bem vista em um celular, pois sera muito grande para ser
+visualizada, porem com a tag <picture> e o parametro
+<source> podemos adicionar imagens de tamanhos diferentes
+que iram carregar a partir do tamanho da tela do usuario
+
+exemplo em codigo:
+
+<picture>
+    <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imagem flexivel">
+</picture>
+<!--NOTA: Os parametros sources tem que estar divididos na ordem correta
+como no exemplo acima começando com a tag <img> carreganod a imagem maior
+terminando com o parametro source no top carregando a imagem menor-->
+
+Aqui temos 3 tipos de imagens uma de 1000px, outra de 700px, e outra de 300px
+o parametro <source media="(mmax-width: 1050px )"> esta indicando que
+o tamanho minimo para que a imagem grande possa ser carregada, 
+é em uma tela de 1050px e também esta indicando que abaixo disso
+ira carregar a imagem de tamanho medio assim como também temos 
+um parametro para a imagem pequena <source media="(max-width: 750px )"
+
+```
+---
 
 
 
