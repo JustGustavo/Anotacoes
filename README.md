@@ -388,7 +388,7 @@ exemplo de codigo na pratica:
     </ul>
 ```
 ---
-Tag `<Picture>`
+Tag `<Picture>` <-- varias fontes de imagens/medias
 ```html
 Usamos a tag picture para criar varias sources de imagens
 criando uma dinamismo entra elas, como por exemplo
