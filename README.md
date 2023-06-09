@@ -542,6 +542,10 @@ como o <control> que usamos para adicionar os controles
 play , ajuste de audio e video para a midia.
 temos também o <poster> para basicamente adicionarmos
 uma thumb ao nosso conteudo
+<loop> também temos a tag loop para fazer com que 
+quando nosso video ou audio chegue ao fim ele volte
+para o começo e reproduza denovo, fazendo assim
+um loop
 
 <!--NOTA nao citamos acima nos parametros porem
 também usaremos o parametro width="" dentro da tag
