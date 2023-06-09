@@ -422,6 +422,81 @@ um parametro para a imagem pequena <source media="(max-width: 750px )"
 
 ```
 ---
+Tag `<audio>` <-- Adicionar audios ao nosso conteudo
+
+```html
+Usamos a <audio> juntamente com alguns parametros 
+para podermos adicionar midias ao nosso site
+
+de fomra simples podemos usar a tag audio dessa forma 
+<audio src="midia/happy-mistake.mp3"></audio>
+
+juntamente do parametro autoplay que pode ou nao
+funcionar no seu navegador para reproduzir o audio
+de forma automatica, ou usando o parametro controls
+que ira adicionar um botao de play dentro do seu site
+
+<audio src="midia/happy-mistake.mp3" controls></audio>\
+
+podemos também usar a tag audio dessa forma:    
+<audio>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+</audio>
+
+adicionando a <source> dentro do tag do que 
+no meio do parametro, dando assim a possibilidade
+de adicionarmos por exemplos varios tipos de arquivos
+de audio para que caso o navegador nao reconheça o tipo
+ele tente executar o outro e assim por diante
+
+<audio>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+</audio>
+
+ficando assim o codigo
+
+<!--Nota podemos também adicionar uma linha de erro
+caso o navegador nao reconheça nenhum dos tipos de
+arquivos como por exemplo uma mensagem avisando que
+nao foi possivel executar o arquivo e um link para
+que o download do proprio seja feito-->
+
+<p>Infelzimente seu navegador nao conseguiu reproduzir o audio <br> <a href="midia/guanacast-33.mp3" download="guanacast-33"> Clique aqui para baixar o arquivo MP3</a></p>
+
+vamos falar um pouco dos parametros 
+<audio preload="metadata" >,  <audio preload="none" > e <audio preload="auto" >
+sao parametros que acompanham a tag <audio> porem temos que tomar 
+cuidado no uso deles pois pode prejudicar a experiencia do usuario
+na hora do uso do site
+
+<audio preload="metadata" > <-- o parametro <metadata> ira carregar
+apenas algumas informaçoes simples do arquivo como data, duraçao e etc
+
+<audio preload="auto" > <-- o parametro <auto> é o que pode mais
+prejudicar a experiencia do nosso usuario, pois ele vai fazer com
+que or arquivo de midia carregue totalmente antes de abrir
+dependendo do tamanho possa ser que se torne impossivel para certos
+usuarios
+
+<audio preload="none" > <-- de forma simples e objetiva o parametro
+<none> nao ira carregar nada, apenas quandop o usuario clicar para ouvir
+ou ver o arquivo de midia
+
+também temos os parametros <autoplay>, <loop> e <controls>
+que vem depois de definirmos o preload"" da nossa tag <audio>
+
+<autoplay> <- ira simplesmente tentar reproduzir a midia atribuida
+a tag, pode nao funcionar na maioria das vezes
+
+<controls> <- ira adicionar um botao de play com informaçao de tempo
+mudança de velocidade e ajuste de audio a nossa midia. 
+```
+---   
+
 
 
 
