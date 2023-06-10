@@ -9,6 +9,7 @@ sera de forma inline, usado juntamente com o codigo
 HTML, que por sinal nao é uma boa pratica para se usar
 em todo o seu codigo e sim em algumas ocasioes especificas
 ```
+---
 ```css
 O css inline é o que usamos junto com a parte do conteudo
 diretamente dentro da tag
