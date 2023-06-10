@@ -588,9 +588,9 @@ incorporar, fazendo esse passo a passo vamos consegui uma comand line que
 podemos colocar em nosso site para que ele tenha videos diretamente do youtube
 poupando assim o bolso do nosso cliente na hora de hospedar o seu site-->
 ```
-#Anotaçoes do curso
+# Anotaçoes do curso
 
-##Aprendendo CSS
+## Aprendendo CSS
 
 ```
 O primeiro contato que iremos ter com as 
