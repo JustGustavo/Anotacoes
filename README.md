@@ -621,6 +621,7 @@ como proximo metodo de usar css-->
 ### CSS interno
 
 ```html
+
 Podemos aplicar css ao nosso codigo usando a tag <style> que vai dentro da parte
 do <head> do nosso codigo HTML, dentro da tag style podemos colocar nossas 
 estilizaçoes e la elas vao se aplicar para tudo que apontamos
