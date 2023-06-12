@@ -672,22 +672,22 @@ basta linkar o css com o comando link
 
 Temos 4 formas de representar cores em CSS
 
-definindo o nome da cor diretamente
+#### definindo o nome da cor diretamente
 ```css
 exemplo:
 style="background-color: blue; color: white;"
 ```
-Usando o Codigo Hexadecimal da cor desejada
+#### Usando o Codigo Hexadecimal da cor desejada
 ```css
 exemplo:
 style="background-color: #0000ff; color: #ffffff;"
 ```
-Usando o Codigo RGB da cor desejada
+#### Usando o Codigo RGB da cor desejada
 ```css
 exemplo:
 style="background-color: rgb(00, 00, 255); color: rgb(255, 255, 255);
 ```
-Usando o comando HSL, (Hue, Saturation, Luminosity)
+#### Usando o comando HSL, (Hue, Saturation, Luminosity)
 ```css
 exemplo:
 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);"
