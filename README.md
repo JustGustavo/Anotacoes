@@ -593,19 +593,20 @@ poupando assim o bolso do nosso cliente na hora de hospedar o seu site-->
 ## Aprendendo CSS
 
 ### CSS in line
-```html
+
 O primeiro contato que iremos ter com as 
 folhas de estilo em cascata ou as CSS
-sera de forma inline, usado juntamente com o codigo
-HTML, que por sinal nao é uma boa pratica para se usar
+sera de forma `inline`, usado juntamente com o codigo
+`HTML`, que por sinal nao é uma boa pratica para se usar
 em todo o seu codigo e sim em algumas ocasioes especificas
 
 O css inline é o que usamos junto com a parte do conteudo
-diretamente dentro da tag
-
+diretamente dentro da tag<>
+```html
 exemplo de codigo css in line
 <h1 style="color: mediumblue; background-color: dodgerblue; ">Olá Mundo</h1>
-
+```
+```html
 <!--Neste exemplos temos a nossa tag <h1> em HTML e dentro da tag temos
 nosso parametro style="" e dentro de style temos nossas formataçoes em css
 o color que ira mudar a cor das letras do conteudo e o background color que ira
@@ -619,29 +620,31 @@ alem de dar muito trabalho deixa nosso codigo uma bagunça. mas resolvemos isso
 como proximo metodo de usar css-->
 ```
 ---
+
 ### CSS interno
 
-```html
-
-Podemos aplicar css ao nosso codigo usando a tag <style> que vai dentro da parte
-do <head> do nosso codigo HTML, dentro da tag style podemos colocar nossas 
+Podemos aplicar css ao nosso codigo usando a tag `style` que vai dentro da parte
+do `head` do nosso codigo HTML, dentro da tag style podemos colocar nossas 
 estilizaçoes e la elas vao se aplicar para tudo que apontamos
 
-como por exemplo se temos 3 tags <h1> em nosso conteudo, e fazemos uma 
+como por exemplo se temos 3 tags `h1` em nosso conteudo, e fazemos uma 
 estilizaçao em css para mudar a cor de sua letra, se fosse com css inline
-teriamos que mudar tag por tag, ja com a tag <style> apenas temos 
+teriamos que mudar tag por tag, ja com a tag `style` apenas temos 
 que declarar 1 vez e se aplicara para todas
 
-ex:
+```html;;
+exemplo:
 
 <style>
 h1 {
 color: blue;
 }
 </style>
+```
 
-agora todas as tags <h1> terao o seu conteudo em azul
+agora todas as tags `h1` terao o seu conteudo em azul
 
+```html
 <!--Ja é uma forma bem melhor de se usar css mas que ainda nao resolve todos
 os nossos problemas, como no caso de nos  tivermos mais de 1 pagina no nosso
 site, nos teremos que fazer a estilizaçao em todas as paginas e a depender
@@ -672,22 +675,22 @@ basta linkar o css com o comando link
 
 Temos 4 formas de representar cores em CSS
 
-#### definindo o nome da cor diretamente
+definindo o nome da cor diretamente
 ```css
 exemplo:
 style="background-color: blue; color: white;"
 ```
-#### Usando o Codigo Hexadecimal da cor desejada
+Usando o Codigo Hexadecimal da cor desejada
 ```css
 exemplo:
 style="background-color: #0000ff; color: #ffffff;"
 ```
-#### Usando o Codigo RGB da cor desejada
+Usando o Codigo RGB da cor desejada
 ```css
 exemplo:
 style="background-color: rgb(00, 00, 255); color: rgb(255, 255, 255);
 ```
-#### Usando o comando HSL, (Hue, Saturation, Luminosity)
+Usando o comando HSL, (Hue, Saturation, Luminosity)
 ```css
 exemplo:
 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);"
