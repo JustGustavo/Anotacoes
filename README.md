@@ -593,15 +593,13 @@ poupando assim o bolso do nosso cliente na hora de hospedar o seu site-->
 ## Aprendendo CSS
 
 ### CSS in line
-```
+```html
 O primeiro contato que iremos ter com as 
 folhas de estilo em cascata ou as CSS
 sera de forma inline, usado juntamente com o codigo
 HTML, que por sinal nao é uma boa pratica para se usar
 em todo o seu codigo e sim em algumas ocasioes especificas
-```
----
-```css
+
 O css inline é o que usamos junto com a parte do conteudo
 diretamente dentro da tag
 
@@ -622,7 +620,7 @@ como proximo metodo de usar css-->
 ```
 ### CSS interno
 
-```css
+```html
 Podemos aplicar css ao nosso codigo usando a tag <style> que vai dentro da parte
 do <head> do nosso codigo HTML, dentro da tag style podemos colocar nossas 
 estilizaçoes e la elas vao se aplicar para tudo que apontamos
