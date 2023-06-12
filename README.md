@@ -618,6 +618,7 @@ metodo se torna inpraticavel, pois voce vai ter que estilizar as tags 1 a 1
 alem de dar muito trabalho deixa nosso codigo uma bagunça. mas resolvemos isso
 como proximo metodo de usar css-->
 ```
+---
 ### CSS interno
 
 ```html
@@ -649,6 +650,7 @@ do tamanho do site tbm se torna inpraticavel o uso do css interno-->
 <!--Porém temos um terceiro metodo que resolve todos os nosso problemas
 o css externo que é o veremos a seguir-->
 ```
+---
 ### CSS Externo
 ```html
 usamos o css externo, criando um arquivo dentro da nossa pasta
@@ -666,7 +668,35 @@ basta linkar o css com o comando link
 <link rel="stylesheet" href="style.css">
 ```
 ---
+### Cores em CSS
 
+Temos 4 formas de representar cores em CSS
+
+definindo o nome da cor diretamente
+```css
+exemplo:
+style="background-color: blue; color: white;"
+```
+Usando o Codigo Hexadecimal da cor desejada
+```css
+exemplo:
+style="background-color: #0000ff; color: #ffffff;"
+```
+Usando o Codigo RGB da cor desejada
+```css
+exemplo:
+style="background-color: rgb(00, 00, 255); color: rgb(255, 255, 255);
+```
+Usando o comando HSL, (Hue, Saturation, Luminosity)
+```css
+exemplo:
+style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);"
+```
+```html
+<!--Nota: todas sao representaçoes da mesma cor porem
+usando metodos diferentes -->
+```
+---
 
 
 
