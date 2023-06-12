@@ -632,7 +632,7 @@ estilizaçao em css para mudar a cor de sua letra, se fosse com css inline
 teriamos que mudar tag por tag, ja com a tag `style` apenas temos 
 que declarar 1 vez e se aplicara para todas
 
-```html;;
+```html
 exemplo:
 
 <style>
