@@ -592,6 +592,7 @@ poupando assim o bolso do nosso cliente na hora de hospedar o seu site-->
 
 ## Aprendendo CSS
 
+### CSS in line
 ```
 O primeiro contato que iremos ter com as 
 folhas de estilo em cascata ou as CSS
@@ -612,9 +613,60 @@ nosso parametro style="" e dentro de style temos nossas formataçoes em css
 o color que ira mudar a cor das letras do conteudo e o background color que ira
 mudar o fundo das letras do conteudo no caso do nosso exemplo o nosso <ola mundo>
 iria ficar com a cor das letras azul escuro e um fundo destacado azul claro-->
+
+<!--Esse metodo se chama css inline e só é usado em casos muito especificos,
+quando temos um codigo muito grande e varias coisas para estilizar esse
+metodo se torna inpraticavel, pois voce vai ter que estilizar as tags 1 a 1
+alem de dar muito trabalho deixa nosso codigo uma bagunça. mas resolvemos isso
+como proximo metodo de usar css-->
 ```
+### CSS interno
 
+```css
+Podemos aplicar css ao nosso codigo usando a tag <style> que vai dentro da parte
+do <head> do nosso codigo HTML, dentro da tag style podemos colocar nossas 
+estilizaçoes e la elas vao se aplicar para tudo que apontamos
 
+como por exemplo se temos 3 tags <h1> em nosso conteudo, e fazemos uma 
+estilizaçao em css para mudar a cor de sua letra, se fosse com css inline
+teriamos que mudar tag por tag, ja com a tag <style> apenas temos 
+que declarar 1 vez e se aplicara para todas
+
+ex:
+
+<style>
+h1 {
+color: blue;
+}
+</style>
+
+agora todas as tags <h1> terao o seu conteudo em azul
+
+<!--Ja é uma forma bem melhor de se usar css mas que ainda nao resolve todos
+os nossos problemas, como no caso de nos  tivermos mais de 1 pagina no nosso
+site, nos teremos que fazer a estilizaçao em todas as paginas e a depender
+do tamanho do site tbm se torna inpraticavel o uso do css interno-->
+
+<!--Porém temos um terceiro metodo que resolve todos os nosso problemas
+o css externo que é o veremos a seguir-->
+```
+### CSS Externo
+```html
+usamos o css externo, criando um arquivo dentro da nossa pasta
+e nomeando ele de style.css, junta com o arquivo criado vamos usar
+o comando link que ja usamos anteriormente para adicionar favicons
+mas dessa vez com css
+
+usando o comando link ele ira nos dar varias opçoes,  nos iremos usar
+o link css, pronto agora o arquivo que criamos anteriormente esta linkado
+ao nosso codigo HTML, toda estilizaçao que fizermos dentro do arquivo
+style.css será aplicada onde ela estiver linkada, entao se tivermos
+mais de 1 pagina em nossa site, nao precisaremo estilizar 1 a 1 
+basta linkar o css com o comando link
+
+<link rel="stylesheet" href="style.css">
+```
+---
 
 
 
