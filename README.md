@@ -708,7 +708,7 @@ e dai que aprendemos sobre a anatomia das fontes e que cada uma tem sua caracter
 
 ### tipos de fontes
 
-existems 4 tipos de fontes que aprendemos
+existems 5 tipos de fontes que aprendemos
 `Serifas, Sans-serif, MonoEspaçadas, HandWiriting e display`
 
 vamos explicar como cada uma funciona
