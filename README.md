@@ -757,12 +757,14 @@ como falamos sobre as familias tipograficas que nem todas as fontes tem, temos a
 
 exemplo
 ```css
+<style>
 h1 {
  font-family: 'Work Sans', sans-serif;
  font-weight: bolder;
  font-size: 3em;
  font-style: italic;
 }
+</style>
 ```
 Basicamente aqui estamos definindo como nosso `h1`, vai ser formatado, nesse caso ele ter a font `Work sans` `Sans-serif`
 que nos nao temos naturalmente no nosso computador mas que vamos aprender usa-la mais pra frente, pois nesse exemplo ela é quem aceita o tipo de estilizaçao que aplicamos a ela pois nem todas as fontes aceitam!!!
