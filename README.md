@@ -779,9 +779,11 @@ mas o que queremos explicar mesmo é que todo esse codigo pode ser simplificado 
 o codigo final ira ficar assim
 
 ```css
+<style>
 h1 {
     font: italic bolder 3em 'Work Sans' sans-serif;
 }
+</style>
 ```
 dessa forma teremos o mesmo resultado do primeiro codigo, porem usando apenas 1 linha, temos que ter cuidado para nao colocar nada errado, pois o codigo tem que ser escrito na ordem correta que foi citada acima
 
