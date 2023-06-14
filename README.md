@@ -750,7 +750,7 @@ a logo do filme jurassic park
 ---
 ### Simplifcando o nosso CSS
 
-vamos falor um pouco de um parametro que so aprenderemos mais pra frente
+vamos falar um pouco de um parametro que so aprenderemos mais pra frente
 
 
 como falamos sobre as familias tipograficas que nem todas as fontes tem, temos as formas de declarar ela dentro do css
