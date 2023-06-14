@@ -700,6 +700,59 @@ style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);"
 usando metodos diferentes -->
 ```
 ---
+## Fontes em CSS
+
+Aprendemos que, a escolha de uma fonte é a parte mais importante do nosso sitre, pois se simplesmente jogarmos uma fonta qualquer pode gerar problemas para o usuario.
+
+e dai que aprendemos sobre a anatomia das fontes e que cada uma tem sua caracteristicas
+
+### tipos de fontes
+
+existems 4 tipos de fontes que aprendemos
+`Serifas, Sans-serif, MonoEspaçadas, HandWiriting e display`
+
+vamos explicar como cada uma funciona
+
+### Fontes-serifadas
+
+As fontes serifadas, sao fontes compostas de elementos em suas letras chamadas serifas que pode ser encontradas na parte superior ou inferior de uma letra ou glifo, usada para facilitar a leitura em certas ocasioes
+
+porem temos que ter cautela, pois em certos casos
+fontes com serifas, nao vao ser tao bem vindas, e sim a proxima que explicaremos que sao as fontes sem-serifas
+ou `Sans-serif`
+
+---
+
+### Fontes Sem serifa
+
+Como o proprio nome ja diz, sao fontes que nao possuem serifa,
+e em certas ocasioes como em locais com pouco espaços para as letras, ou que elas tenham que ser muito pequenas, a fonte `sans-serif` sera melhor para a leitura
+
+outra caracteristica que a fonte `sans-serif` tem que as outras fontes podem ou nao ter sao a familia tipografica da fonte que consiste na forma do glifo, podendo ser as que aprendemos `Light, Normal, seminegrito, negrito, extranegrito`
+
+---
+
+### Fontes monoespaçadas
+nao temos muito o que explicar sobre essa fonte, ela é uma fonte sem serifa que como o nome diz ela é `monoespaçada` todos os seus glifos/letras terao o mesmo tamanho e ocuparam o mesmo espaço
+
+---
+
+### Fontes handwriting
+Sao fontes scripitadas, fontes que o computador tenta replicar para se parecer com a escrita humana
+
+---
+
+### Fontes Display
+
+Fontes de festa ou que levam a um filme como por exemplo
+a logo do filme jurassic park
+
+---
+
+
+
+
+
 
 
 
