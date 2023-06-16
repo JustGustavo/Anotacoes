@@ -987,7 +987,8 @@ div:hover > p {
     background-color: red;
     width: 300px;
 
-    /*APENAS LEMRANDOQ QUE ALGUNS ELEMENTOS DESSE CODIGO NOS SO IREMOS APRENDER MAIS A FRENTE EM NOSSAS AULAS, USAREMOS AQUI APENAS COMO INTUITO DE EXPLICAÇAO*/
+    /*APENAS LEMRANDOQ QUE ALGUNS ELEMENTOS DESSE CODIGO NOS SO IREMOS APRENDER MAIS A FRENTE EM NOSSAS AULAS, 
+    USAREMOS AQUI APENAS COMO INTUITO DE EXPLICAÇAO*/
 }
 ```
 note que em nosso HTML, temos um paragrafo escrito `texto escondido`, esse é o conteudo que queremos mostrar na tela quando o usuario passar o mouse por cima da frase `passe o mouse aqui`. Agora vamos explicar como isso tudo ira funcionar em nosso codigo css
