@@ -855,6 +855,20 @@ tipos de format()
 -->
 ```
 ---
+### Alinhamento de texto com CSS
+
+Essa vai ser uma explicaçao simples e objetiva, basicamente podemos alinha textos a direita, a esquerda, no centro, ou justificar que ira alinhar  igualmente nas duas direçoes
+
+também temos um comando chamaod `text-ident` que ira adicionar identaçao ao começo de um paragrafo como vemos em livros ou quando escrevemos
+
+```css
+text-align: center;
+text-align: justify;
+text-align: left;
+text-align: right;
+text-indent: 20px;
+```
+aqui estao todos os comandos que aprendemos nessa aula
 
 
 
