@@ -941,7 +941,7 @@ também podemos usar id e class junto em uma mesma tag, por exemplo no nosso tit
 ```html
 <h1 id="principal" class="categoria">Criando Sites com HTML e CSS</h1>
 ```
-nesse exemplo ele "teria" as 2 estilizaçoes tanto as definidas para o id principal como as definidas para o class categoria, porem predominariam as estilizaçoes do id , por que na hierarquia de definiçao o id foi atribuido primeiro
+nesse exemplo ele teria as 2 estilizaçoes tanto as definidas para o id principal como as definidas para o class categoria, porem predominariam as estilizaçoes do id , por que na hierarquia de definiçao o id foi atribuido primeiro
 
 ---
 
