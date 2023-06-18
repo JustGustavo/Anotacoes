@@ -1042,7 +1042,9 @@ box-level
 `<div>, <h1> a <h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>,<form>, <video>`
 
 inline- level `<span>, <a>, <code>, <small>, <strong>, <em>, <sup-sub>, <label>, <button>, <input>, <select>` 
+
 ---
+
 
 
 
