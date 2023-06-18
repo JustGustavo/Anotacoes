@@ -1014,7 +1014,35 @@ div:hover > p {
 ja essa segunda linha, esta definindo um `hover` para nossa tag p, e logo abaixo esta indicando que ela deve mostrar o conteudo na tela, ou seja quando o usuario passar o mouse por cima do `PASSE O MOUSE AQUI` nossa tag p que esta configurada para nao ser mostrada inicialmente , ira mostrar seu conteudo na tela
 
 ===
+### Introduçao a modelo de caixas
 
+o modelo de caixas que vamos aprender funcionar tanto em HTML como CSS, e seu conceito basico é que tudo que fazemos em HTML ou CSS usa um modelo de caixas, ou de caixas dentro de caixas, por exemplo quando criamos um heading/titulo, o nosso h1 é um caixa, uma lista é uma caixa dentro de caixas, e assim por diante
+
+vamos falar bem vagamento sobre a anatomia dos modelos de caixa, toda caixa tem um tamanho sua altura e largura height e widith, e qualquer box, também tem em volta do seu conteudo um uma linha tracejada em volta dela chamada de `border`, e esse border serve como uma base para estilizarmos nosso conteudo
+
+por exemplo se estivermos achando nosso border muito colado ao conteudo podemos usar um parametro chamado `padding` que basicamente cria um espaço por dentro do border dando um espaço entro o `border` e o conteudo dentro delo
+
+do mesmo jeito temos um parametro contrario o `margin` que cria um espaço entre o border e os conteudos por fora proximos a ele
+
+ou seja falando de forma bem rustica, um cria espaço por dentro e o outro por fora
+
+também temos o `outline` que adiciona um tracejado em volta do border 
+
+### box level / inline level
+
+temos 2 tipos de caixa o `box level` o `inline level`
+
+o box level funciona da seguinte maneira, ele sempre vai se iniciar em uma nova linha, por exemplo se colocarmos uma caixa do tipo box-level no meio do nosso conteudo, ele ira pular uma linha fazer a caixa  box-level depois pular outra lina e continuar o nosso conteudo. E a outra caracteristica dele é que ele sempre ocupa a largura total da tela, um exemplo de boxlevel é a `<div>`
+
+agora o inline level ele funciona ligeiramente diferente, se temos uma box inline level no meio do nosso conteudo, ela ira saltar pro lado , vai ocupar apenas o espaço necessario , nao ira fazer quebra de linha e vai continuar o conteudo na mesma linha logo apos o box, um exemplo de inline level é o `<span>`
+
+outros exemplos de box-level e inline-level
+
+box-level
+`<div>, <h1> a <h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>,<form>, <video>`
+
+inline- level `<span>, <a>, <code>, <small>, <strong>, <em>, <sup-sub>, <label>, <button>, <input>, <select>` 
+---
 
 
 
