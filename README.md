@@ -1089,15 +1089,12 @@ esse é o CSS que fizemos na aula como explicaçao dos nossos `box-models`, note
 
 agora vamos aprender simplificar essas configuraçoes usa `shorthands`
 ```css
-<style>
 h1{
 border: 10px solid darkslategray;
 outline: 5px dashed salmon;
 padding: 10px 10px 10px 10px; 
 margin: 20px 20px 40px 20px;
 }
-
-</style>
 ```
 note que declaramos em apenas 4 linhas as mesmas configuraçoes vistas acimas, seguindo a ordem também que vimos acima,
 
@@ -1110,11 +1107,9 @@ se declaramos 2 valores, por exemplo `10px` e `20px`, ele esta declarando para o
 aprendemos também que para centralizar um box, temos que atribuir o valor `auto` no parametro `margin`, mas e se quisermos apenas centralizar 2 lados e quisermos que os outros tenham o valor que atribuimos? aprendemos também que isso é possivel
 
 ```css
-<style>
 h1{
     margin: 20px auto 40px auto;
 }
-</style>
 ```
 agora teremos nosso  `left` e `right` centralizados com margin auto, e nosso `top` e `bottom` terao o valor de `20px` e `40px`
 
