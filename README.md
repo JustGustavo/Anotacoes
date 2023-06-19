@@ -1045,6 +1045,78 @@ inline- level `<span>, <a>, <code>, <small>, <strong>, <em>, <sup-sub>, <label>,
 
 ---
 
+Aprendenmos o uso do `Border, Padding, Margin, e o outline`, só para refrescar a memoria , o `Border` é a borda que fica em volta do nosso box, o `padding` é o preenchimento ou espaço do border para dentro, e o `Margin` é espaço do border para fora, e também temos o `Outline` que é um tracejado que fica em volta do nosso border e dentro do nosso margin
+```css
+<style>
+    h1 {
+        background-color: lightgrey;
+        height: 300px;
+        width: 300px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: darkslategray;
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 40px;
+        margin-left: 20px;
+
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: salmon;
+
+    }
+    a{
+        border-width: 10px;
+        border-style: solid;
+        border-color: red;
+
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
+</style>
+```
+esse é o CSS que fizemos na aula como explicaçao dos nossos `box-models`, note que , existe uma ordem na hora de declara cada direçao seja do padding ou margin, primeiro começamos com o `top` depois `right` vamos para o `bottom` e terminamos no `left`
+
+agora vamos aprender simplificar essas configuraçoes usa `shorthands`
+```css
+<style>
+h1{
+border: 10px solid darkslategray;
+outline: 5px dashed salmon;
+padding: 10px 10px 10px 10px; 
+margin: 20px 20px 40px 20px;
+}
+
+</style>
+```
+note que declaramos em apenas 4 linhas as mesmas configuraçoes vistas acimas, seguindo a ordem também que vimos acima,
+
+também podemos colocar apennas 1 ou 2 valores na hora de declarar o padding ou margin
+
+com apenas um valor por exemplo `10px` todos os lados  teram o mesmo  tamanho
+
+se declaramos 2 valores, por exemplo `10px` e `20px`, ele esta declarando para o `top` e o`right`, porem nao ira modificar apenas o top e o right, no caso de 2 valores apenas, ele ira atribuir o primeiro tamanho declarao para o top e o bottom e o segundo valor para o right e o left
+
+aprendemos também que para centralizar um box, temos que atribuir o valor `auto` no parametro `margin`, mas e se quisermos apenas centralizar 2 lados e quisermos que os outros tenham o valor que atribuimos? aprendemos também que isso é possivel
+
+```css
+<style>
+h1{
+    margin: 20px auto 40px auto;
+}
+</style>
+```
+agora teremos nosso  `left` e `right` centralizados com margin auto, e nosso `top` e `bottom` terao o valor de `20px` e `40px`
+
+---
 
 
 
