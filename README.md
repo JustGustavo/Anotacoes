@@ -1049,7 +1049,6 @@ inline- level `<span>, <a>, <code>, <small>, <strong>, <em>, <sup-sub>, <label>,
 
 Aprendenmos o uso do `Border, Padding, Margin, e o outline`, só para refrescar a memoria , o `Border` é a borda que fica em volta do nosso box, o `padding` é o preenchimento ou espaço do border para dentro, e o `Margin` é espaço do border para fora, e também temos o `Outline` que é um tracejado que fica em volta do nosso border e dentro do nosso margin
 ```css
-<style>
     h1 {
         background-color: lightgrey;
         height: 300px;
@@ -1083,7 +1082,6 @@ Aprendenmos o uso do `Border, Padding, Margin, e o outline`, só para refrescar 
         padding-bottom: 10px;
         padding-left: 10px;
     }
-</style>
 ```
 esse é o CSS que fizemos na aula como explicaçao dos nossos `box-models`, note que , existe uma ordem na hora de declara cada direçao seja do padding ou margin, primeiro começamos com o `top` depois `right` vamos para o `bottom` e terminamos no `left`
 
