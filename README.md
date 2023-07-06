@@ -1169,5 +1169,31 @@ o mais importante desse codigo é os nossos `position` pois pelo que entedemos �
 com os dois positions definidos, o video ira ficar todo bugado no codigo, junto com nosso background, porem com o `padding-bottom` de `56%`nosso background volta ao normal, e quando definimos embaixo nossa position para `absolute` temos a possibilitade de editar noss `leftm` e `right` e tbm nos da a possibilidade de mudar seu `widht` e `heigt` que nesse caso esta em 90% para conseguirmos ver nosso background
 
 ---
+### Imagens de fundo
 
+usando a  propriedade `background-image` alem de podermosa dicionar um `Linear-Gradient` aprendemos tbm que em vez do Linear Gradiente usando o `url()` podemos adicionar uma imagem como background a o nosso site , e juntamente a ele aprendemos alguns parametros para usar para editar esses nosso background como o
+
+
+`background-position` <-- usado para definir a posiçao da imagem ou onde ela começa, no nosso fundo
+```html
+<!--Valores usados no background-position
+top , right, bottom , left, center, esses
+valores tambem pode ser misturas como por
+exemplo top left, center bottom, e assim por
+diante -->
+```
+`background-size` <-- no literal do comando edita o tamanho da nossa imagem de fundo
+```html
+<!--Valores usados no background-size
+px, vh , % contain e cover, o uso vai 
+depender da situaçao-->
+```
+`background-repeat` <-- mais uma vez no literal do comando defini quantas vezes a imagem vai se repetir, pois se por exemplo ela for muito pequena para conseguir ocupar o espaço disponivel, ela ira naturalmente repetir até ocupar tudo
+```html
+<!--Valores usados no background-repeat
+repeat, no-reapeat, repeat y , repeat x, 
+o uso vai depender da situaçao-->
+```
+
+---
 
