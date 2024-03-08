@@ -1199,7 +1199,7 @@ o uso vai depender da situaçao-->
 #Aprendendo sobre iframe
 
 os `iframes` basicamente sao modelos de miniatura que podem ser atribuidos ao nosso site, mostrando conteudos de outro site, como por exemplo sites que tem anexados ao seu feed
-videos do youtube em que voce nao precisa abrir o proprio youtube para velos, abaixo na imagem podemos ver um exemplo de iframe como foi mostrado na Aula do cap 22\
+videos do youtube em que voce nao precisa abrir o proprio youtube para velos, abaixo na imagem podemos ver um exemplo de iframe como foi mostrado na Aula do cap 22
 
 ![image](https://github.com/JustGustavo/Coisas-do-curso/assets/111237943/c4b9f4d1-07bf-4fd7-a08e-0f9f653376ca)
 
