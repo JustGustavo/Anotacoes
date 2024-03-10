@@ -1196,12 +1196,72 @@ o uso vai depender da situaçao-->
 ```
 
 ---
-#Aprendendo sobre iframe
 
-os `iframes` basicamente sao modelos de miniatura que podem ser atribuidos ao nosso site, mostrando conteudos de outro site, como por exemplo sites que tem anexados ao seu feed
-videos do youtube em que voce nao precisa abrir o proprio youtube para velos, abaixo na imagem podemos ver um exemplo de iframe como foi mostrado na Aula do cap 22
+#Aprendendo sobre iframes
 
-![image](https://github.com/JustGustavo/Coisas-do-curso/assets/111237943/c4b9f4d1-07bf-4fd7-a08e-0f9f653376ca)
+os `iframes` sao basicamente miniaturas como por exemplo miniaturas de video que pode ser atribuidas ao nosso site
+
+vamos fazer um exemplo pratico abaixo para ficar melhor de entender
+
+```html
+<iframe src="https://www.youtube.com" frameborder="0"></iframe>
+```
+
+infelizmente nao iremos conseguir visualizar o iframe na pratica pois nossas anotaçoes em MarkDown nao suporta rodar os codigos e sim apenas destacalos.
+
+porém ainda podemos dividr nosso parametro iframe em pedaços e explicar como ele funciona.
+seguido da tag `iframe` termos dentro dele o parametro `src` (source/fonte) e o parametro `frameborder` 
+
+O parametro `src` é basicamente onde ira ficar o endereço do conteudo que queremos mostrar no nosso iframe, no caso do exemplo acima usamos a <b>URL</b> do <b>Youtube</b>
+
+e o nosso parametro `frameborder` funciona da mesma formar que o `border` nas <b>CSS</b> pois ele como o proprio ja diz ira definir o tamanho/grossura da borda que acompanha o iframe, de padrao ele ja vem configurado a zero
+
+<!--
+Vale ressaltar que o iframe como dito na aula nao vai ser usado em todas as ocasioes e sim em casos especificos pois temos varias formas de abordar um conteudo em nosso site e também levando em conta o fato de nem todos os sites aceitarem que seus conteudo sejam vinculados a iframes e em alguns navegadores e dispositivos mesmo sendo muito dificil hoje em dia pode ocorroer o fato de os iframes nao serem compativeis para serem visualizados por certos usuarios em certos aparelhos e navegadores-->
+
+outra coisa interessante sobre os iframes é que nao vem destacado em sua tag font é que o seu tamanho padrao sempre vai ser de <b>300x150</b> porem podemos editar facilmente isso com os parametros `Width` e `Height` ou `vh`
+
+outra curiosidade sobre o iframe é que no lugar do parametro `src` podemos usar o parametro `srcdoc` que nos permite usar <b>HTML</b> direto na pagina padrao do iframe
+
+exemplo em codigo
+
+```html
+<iframe srcdoc="<h1>Escolha Uma Das opçoes acima<h1></iframe>
+```
+
+também podemos atribuir ao iframe conteudos internos que ja se encontram em nosso codigo, como por exemplo mostrar uma sub-pagina ou outra aba do nosso site, e em vez de abrir de fato uma nova aba, mostra-la dentro do iframe
+
+usando o parametro `name` que basicamente vai ser o URL ou `src` do nosso iframe podemos vincular conteudos internos para serem visualizaos no iframe
+
+exemplo em codigo
+
+```html
+<iframe name="frame"></iframe> 
+<!-- estamos defininindo o URL/src/fonte do nosso iframe para frame-->
+
+<ul>
+    <li><a href="paginas-extras/pag001.html" target="frame">Primeira Escolha</a></li>
+    <li><a href="paginas-extras/pag002.html" target="frame">Segunda Escolha</a></li>
+    <li><a href="paginas-extras/pag003.html" target="frame">Terceira Escolha</a></li>
+    </ul>
+
+    <!-- e agora estamos atribuindo que as paginnas 1 2 e 3 iram ser aprensentadas
+    dentro do iframe com o parametro name definido para frame-->
+```
+
+<!-- Nota da aula anterior 
+temos que tomar cuidado na hora de usar um iframe pois podem a ver problemas de leitura por parte do robo de busca de sites do google, ou até mesmo com programadas de leituras de telas-->
+
+<!--Vale ressaltar também que devemos ter cuidado aos conteudos
+externnos que atribuimos ao nosso site com uso de iframes pois
+o iframe funciona como uma porta de entrada e quando vinculamos
+um conteudo ao nosso iframe é como se estivessemos deixando a porta
+da nossa casa aberta para aquela site-->
+
+levando em conta o que foi dito acima na nossa aula 07 do cap 22 foi ensinando 2 parametros para fazer com que nossos iframes fiquem mais seguros que no caso seria o parametro `sandbox` com o valor <b>sandbox</b> também e o parametro `referrerpolicy` como o valor <b>no-referrer</b> que iram fazer com que o iframe nao colete nenhum tipo de dado referente ao nosso usuario e com que ele nao forneça dados ou concorde/clique em propagandas duvidosas ou de submit em coisas que nao deve
+
+no caso de termos fontes que queremos permitir porem mantendo a segurança temos outros valores que podem ser atribuidos ao parametro sandbox, um deles seria o <b>allow-same-origin</b> que permiti voce fornecer dados dar submit ou qualquer açao que seja em iframes que constam no mesmo serviço que se referem da mesma origem entre outros valores que podem ser atribuidos ao sandbox dependendo da necessidade e situaçao
+
 
 
 
