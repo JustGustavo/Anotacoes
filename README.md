@@ -1197,7 +1197,7 @@ o uso vai depender da situaçao-->
 
 ---
 
-#Aprendendo sobre iframes
+# Aprendendo sobre iframes
 
 os `iframes` sao basicamente miniaturas como por exemplo miniaturas de video que pode ser atribuidas ao nosso site
 
@@ -1249,6 +1249,7 @@ exemplo em codigo
     dentro do iframe com o parametro name definido para frame-->
 ```
 
+```html
 <!-- Nota da aula anterior 
 temos que tomar cuidado na hora de usar um iframe pois podem a ver problemas de leitura por parte do robo de busca de sites do google, ou até mesmo com programadas de leituras de telas-->
 
@@ -1256,7 +1257,8 @@ temos que tomar cuidado na hora de usar um iframe pois podem a ver problemas de 
 externnos que atribuimos ao nosso site com uso de iframes pois
 o iframe funciona como uma porta de entrada e quando vinculamos
 um conteudo ao nosso iframe é como se estivessemos deixando a porta
-da nossa casa aberta para aquela site-->
+da nossa casa aberta para aquela site -->
+```
 
 levando em conta o que foi dito acima na nossa aula 07 do cap 22 foi ensinando 2 parametros para fazer com que nossos iframes fiquem mais seguros que no caso seria o parametro `sandbox` com o valor <b>sandbox</b> também e o parametro `referrerpolicy` como o valor <b>no-referrer</b> que iram fazer com que o iframe nao colete nenhum tipo de dado referente ao nosso usuario e com que ele nao forneça dados ou concorde/clique em propagandas duvidosas ou de submit em coisas que nao deve
 
