@@ -1264,6 +1264,201 @@ levando em conta o que foi dito acima na nossa aula 07 do cap 22 foi ensinando 2
 
 no caso de termos fontes que queremos permitir porem mantendo a segurança temos outros valores que podem ser atribuidos ao parametro sandbox, um deles seria o <b>allow-same-origin</b> que permiti voce fornecer dados dar submit ou qualquer açao que seja em iframes que constam no mesmo serviço que se referem da mesma origem entre outros valores que podem ser atribuidos ao sandbox dependendo da necessidade e situaçao
 
+---
+
+# Aprendendo sobre formularios
+
+No capitulo 24 do curos de HTML 5 E CSS3 do curso em video  estamos dando nossos primeiros passos com o uso de formularios, que basicamente é qualquer lugar que solicita que voce preencha com algum dado como **Nome, Sobrenome, Endereço, CPF** e etc 
+
+e como criamos um form?
+basicamente iremos usar a tag **form** e preencher com os parametros correto
+
+lembrando que, até o momento estamos aprendendo a forma mais simples e sem comprometimento de fazer uma formulario pois aqui estamos visando aprender toda a estrutura do form e como seus parametros e valores funcionam
+
+### Form na partica
+
+```html
+   <form action="cadastro.php" method="post">
+        <p>
+            <label for="inome">Nome:</label> 
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"> 
+        </p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+```
+
+aqui estamos mostrando o codigo que fizemos na aula 03 do cap 24 que ensina sobre o metodo GET e POST, porem iremos aproveitar esse codigo para destrinchar como funciona o formulario
+
+começando pelo proprio `<form>` que vem acompanhamo dos parametors `action` e  `method`
+
+```html
+<form action="#" method="#"></form>
+```
+o parametro `action` define para onde vao ser enviados os dados do formulario, ou seja, como por exemplo em uma tela de login, o que estiver dentro do nosso `action` é para onde vai nosso usuario e senha
+
+ja o  parametro `method` se trata de uma forma de esconder os seus dados, pois como vimos na aula 03 do cap 24 quando nao temos um valor definido para o `method` ele por padrao ira mostrar os dados do `<form>`na **URL** do  site
+
+### GET e  POST
+
+Falando um  pouco mais  sobre o parametro `method` iremos aprender sobre os valores que podem ser atribuidos a ele que no nosso caso é o `GET` e `POST` e vamos aprender em que caso usar cada  
+
+o `GET` é um valor que ira mostrar normalmente os dados informados ao formulario, na URL  ou onde quer que seja.
+Ele também conta com um limite de envio de dados podendo enviar apenas 3000b de dados via `GET` que sao aproximadamente equivalente a 3000 letras,
+
+```html
+<form action="#" method="get"></form>
+```
+levando em conta os dados acima podemos dizer que, nao iremos usar o `GET` em campos sensiveis como senhas e afins, e nem no envio de arquivos que excedam  pois como foi dito ele tem um limite de envio
+
+o `POST` é o oposto do `GET` pois é um valor que ira esconder seus  dados de forma superficial, entao na ira ser mostrado descaradamente ao usuario, e também para o envio de arquivos ou qualquer coisa que exceda 3000bites iremos usar o `POST`
+```html
+<form action="#" method="post"></form>
+```
+
+### Input
+
+vamos começar pelo `input` que nao tem muito segredo de como funciona, basicamente quando voce vai criar um input ele tem o parametro `type` dentro dele que define que tipo de input se ele vai ser de texto, de submit, de botao e etc.
+
+no caso do nosso codigo nos usamos 2 tipos de input o de `text` e o de `submit` que basicamente o `type text` criar uma caixa para digitarmos as informaçoes, como Nome e Sobrenome no no casso, e o `type submit` ira basicamente criar um botao de confirmar/enviar , lembrando que o submit vem acompanhado do parametro `value` que nele voce ira definir o nome que o botao tera
+
+
+```html
+<input type="text" name="nome" id="inome">
+```
+```html
+<input type="text" name="nome" id="isobrenome">
+```
+```html
+<input type="submit" value="Enviar">
+```
+
+dentro do input também teremos 2 parametros muito importantes que é o `name` e `ìd` que falando de forma basicamente é como damos um apelido ao nosso input para podermos chamalo ele em outras partes do codigo eventualmente usando o seu "apelido"
+
+A diferença entre o `id` e `name` é apenas em seu uso, levando em conta que os dois podem ter o mesmo valor atribuido o uso de cada uma se da a finalidade sendo assim `name` sendo melhor usado com **PHP** e **HTML** e o `id` sendo melhor usado com **JavaScript** entao nosso `input` **SEMPRE** deve ter seu name/id com valores devidamente atribuidos
+
+### Label
+
+`Label` é basicamente um sistema de etiquetamento/etiqueta que é crucial para que nosso site seja bem visto pelos sistemas de busca do google e também para ajudar na interçao do usuario, tendo em vista que o Label cria um ponto sensivel no texto que acompanha o input fazendo com que quando o usuario clica no nome ele va para caixa do input, ajudando assim usuario como por exemplo com telas pequenas
+
+```html
+<label for="inome"></label>
+```
+Nosso `Label` é acompanhado de um parametro `for` no nosso caso como estamos usando o **label** para o **input** o valor que iremos usar vai ser **SEMPRE** o que esta atribuido ao nosso `id`
+
+### Anotaçoes da Aula 04 do cap 24
+
+na aula 04 aprendemos sobre alguns parametros muito uteis que adicionam funcionalidades de certa forma cruciais para o bom funcionamento de um for mulario
+
+vamos ver abaixo o codigo que criamos na aula e iremos quebralo em pedaços para explicar os novos parametros que aprendemos
+
+```html
+<form action="iusu" method="post" autocomplete="on">
+        <p>
+            <label for="iusu">Usuario</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" placeholder="Nome Do Usuario" autocomplete="username">
+        </p>
+        <p>
+            <label for="isen">senha</label>
+            <input type="password" name="sen" id="isen" required minlength="8" maxlength="16" placeholder="Senha" autocomplete="current-password">.
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Redefinir">
+        </p>
+    </form>
+```
+
+### Placeholder
+
+basicamente como vimos o placeholder adiciona uma dica na caixa do input com o valor que definimios dentro do **`placeholder`** no caso do nosso exemplo, dentro da caixa ira aparecer **Nome do Usario** para destacar que aquela caixa se trata de uma caixa para enserir dados referente ao nome do usuario e podemos fazer isso com qualquer outro input e adicionar qualquer valor ao nosso placeholder
+
+**Exemplos**
+```html
+<input type="text" name="usu" id="iusu" placeholder="Nome do Usuario">
+<input type="password" name="sen"  id="isen"placeholder="Senha">
+```
+
+
+### required, min/max lenght e size
+
+no exercicio que fizemos na aula percebemos que, quando tentavamos enviar algum nome me usuario e senha  ele enviava normalmente mesmo com as duas caixas vazias e isso é um problema pois para logar em um site por exemplo precisamos sempre do usuario e senha que cadastramos naquele site 
+
+para isso nao ocorrer nos aprendemos o parametro **`required`** que falando de forma bem basica força voce a os dados solicitados no nosso caso usuario e senha para poder enviar o formulario que voce esteja preenchendo
+
+```html
+<input type="text" name="usu" id="iusu" required>
+```
+acompanhando do required  também  temos e podemos ou nao  usar **`minlenght`** e o **`maxlength`**  que basicamente adicionam uma quantidade minima e maxima de caracteres que os dados solicitados devem ter, no nosso caso, tamanho  minino ou maximo  de senha e nome do usuario
+
+**exemplo** 
+```html
+<input type="text" name="usu" id="iusu" minlenght="8" maxlenght="16">
+<input type="password" name="sen" id="isen"  minlenght="8"  maxlenght="16">
+
+<!--
+Nota:
+    Também aprendemos o uso do type password que define que nossa caixa
+    é  para o uso de senha, e esconde o que esta sendo escrito -->
+```
+e por ultimo  mas nao menos importante, o **`size`** que adiciona um tamanho maximo de caracteres que ira ser mostrado da nossa caixa, ou seja se o `size` estiver limitado a 10 mas o `maxlenght` da caixa de usuario por exemplo estiver definido para 30 voce podereá colocar as 30 caracteres, porém ele so ira mostrar 10 na caixa de usuario
+
+```html
+<input type="text" name="usu" id="iusu" size="10">
+```
+### autocomplete on/off e outras funcionalidades
+
+o **`autocomplete`** ja se define pelo nome, quando ja visitamos um site anteriormente e voltamos para entrar naquele site, quando clicamos nas caixas do formulario ele sugere algum dado que usamos anteriormente no site para ser usado denovo, esse é o autocomplete na pratica porem podemos simplesmente desligar esse  funcionalidade mudando o valor do autocomplete de on para off caso voce nao deseje no seu site
+```html
+<form autocomplete="on"></form>
+<form autocomplete="off"></form>
+```
+o autocomplete principal de on/off ira se definido dentro do nosso **`form`** porém temos como definir autocomplete dentro dos nosso **`inputs`** que irá nos proporcionar outras varias finalidades para o autocomplete, os valores do autocomplete dentro do input que aprendemos na aula foram o **username** e  **current-password**
+```html
+<input type="text" name="usu" id="iusu" autocomplete="username">
+<input type="password" name="sen" id="isen" autocomplete="current-password">
+
+<!--
+Nota
+    Lembrando que o autocomplete so ira funcionar dentro dos nosso inputs
+    se ele tiver sido definido com o valor "on" dentro do  form
+ -->
+```
+o autocomplete ira funcionar do mesmo jeito dentro do input porém com os valores atribuidos a ele eles completar referente ao valor que foi atribuido, nos nossos casos, o ultimo nome de usuario e a ultima senha que voce usou para acessar aquele site
+
+### Anotaçoes aula 05 cap 24
+
+Nessa  aula aprendemos algumas novas funcionalidades e uso de novos parametros e formas de usar os que ja aprendemos que nao funcionam  da mesma forma dependendo do tipo do input por exemplo
+
+prrimeiro vamos falar dos novos parametros e types que aprendemos
+
+### min/max 
+
+de forma direto e bem simples de explica funciona como o **`minlenght` `maxlength`** so que diferente do min/max lenght os parametros **`min `** e  **`max`** funcionam para caixas do tipo **`number`** que como o proprio nome ja diz, sao caixas que trabalham com numeros
+
+```html
+<input type="number" name="media" id="imedia" min="0" max="10" step="0.1" value="6">
+```
+
+### step e value
+
+o parametro **`value`** ja nos foi aprensentado, usamos ele para definir o valor/nome que ira ter nas caixas de `submit` `reset` e outras do tipo
+
+porém com caixas do tipo `number`, `month` e `date` como vimos na aula o **`value`** funciona de forma diferente, em vez de nos dar um nome para um botao por exemplo, ele ira adicionar um valor pre-definido a nossa caixa, como foi visto na aula 
+
+e o **`step`** que é o novo parametro que aprendemos se trata simplesmente de um parametro que defini como uma caixa do tipo **`number`** ira contar seus numerors se vai ser de 1 em 1 ou 5 em 5 ou qualquer outra valor valido que vc definir, no nosso caso da aula e do exemplo da mesma definimos nosso step para 0.1 ou seja, o contador ira contar 0.1 em 0.1  
+
+```html
+<input type="number" name="media" id="imedia" min="0" max="10" step="0.1" value="6">
+```
+vale lembra que a funcionalidade do step se da da seguinte forma, ele so vai validar dados da contagem que esta definida no step, ou seja se o step esta configurando para 0.5 ou seja para conta de 0.5 em 0.5  ele nao ira aceitar valores como 5.3, 10.2, 0.3 e assim por adiante, avisando com uma caixa de erro que os valores atribuidos sao invalidos 
+
+---
+
 
 
 
